@@ -28,6 +28,10 @@ let conf = {
                 ],
             },
             {
+                test: /\.svg$/,
+                loader: 'file-loader'
+            },
+            {
                 test: /\.pug$/,
                 use: [
                     'html-loader',

@@ -1,0 +1,56 @@
+include ../../blocks/button/button
+
+//- - var menuList = [{
+//-         text: 'Home',
+//-         link: '#',
+//-         active: true
+//-     },
+//-     {
+//-         text: 'About Us',
+//-         link: '#',
+//-         active: false
+//-     },
+//-     {
+//-         text: 'Services',
+//-         link: '#',
+//-         active: false
+//-     },
+//-     {
+//-         text: 'Careers',
+//-         link: '#',
+//-         active: false
+//-     },
+//-     {
+//-         text: 'News',
+//-         link: '#',
+//-         active: false
+//-     },
+//-     {
+//-         text: 'Documentation',
+//-         link: '#',
+//-         active: false
+//-     },
+//- ];
+
+mixin header()
+    header.header
+        div.header__container 
+            img(class="header__logo", src="../../blocks/header/img/logo.svg", alt="sdada ")
+
+        
+
+        
+        //- mixin menu-link(menuList)
+
+        //-     li Home
+        //-     li About Us
+        //-     li Services
+        //-     li Careers
+        //-     li News
+        //-     li Documentation
+
+        ul
+            li 
+                +btn('default', '#', 'register')
+            li
+                +btn('light', '#', 'login')
